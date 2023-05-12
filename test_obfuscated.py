@@ -13,8 +13,8 @@ if __name__ == "__main__":
     path = sys.argv[1]
     string = sys.argv[2]
     if (test_obfuscated(path, string)):
-        print("SUCCESS - string \"{}\" is obfuscated".format(string))
+        print(f'SUCCESS - string \"{string}\" is obfuscated')
         sys.exit(0)
     else:
-        print("FAILURE - string \"{}\" is not obfuscated".format(string))
+        print(f'FAILURE - string \"{string}\" is not obfuscated')
         sys.exit(1)
